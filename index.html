@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firz Store - Top Up Diamond ML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background: black;
-            color: white;
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .product {
-            background: white;
-            width: 90%;
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        }
-        .price {
-            font-size: 22px;
-            color: #27ae60;
-            font-weight: bold;
-        }
-        button {
-            background: #25d366;
-            color: white;
-            padding: 12px;
-            width: 100%;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #1ebe5d;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firz Store - Top Up Diamond Murah</title>
+<style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; }
+    header { background:#111; color:#fff; padding:15px; text-align:center; font-size:22px; font-weight:bold; }
+    nav { background:#222; padding:10px; display:flex; overflow-x:auto; }
+    nav a {
+        color:white; text-decoration:none; padding:10px 15px; margin-right:5px;
+        background:#333; border-radius:5px; white-space:nowrap;
+    }
+    nav a:hover { background:#555; }
+    section { padding:20px; }
+    h2 { color:#222; border-left:4px solid #ff5722; padding-left:10px; }
+    .card {
+        background:white; padding:15px; margin:10px 0; border-radius:8px;
+        box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+    .btn {
+        display:inline-block; background:#ff5722; color:white;
+        padding:10px 15px; border-radius:5px; text-decoration:none;
+        font-weight:bold; margin-top:10px; display:block; text-align:center;
+    }
+</style>
 </head>
 <body>
 
-<header>Firz Store | Top Up ML Murah</header>
+<header>FIRZ STORE</header>
 
-<h2>Daftar Harga Diamond</h2>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#ml">Diamond ML</a>
+    <a href="#ff">Diamond FF</a>
+    <a href="#pubg">UC PUBG</a>
+    <a href="#lainnya">Top Up Lain</a>
+    <a href="#promo">Promo</a>
+    <a href="#testi">Testimoni</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+</nav>
 
-<div class="product">
-    <h3>86 Diamond</h3>
-    <p class="price">Rp 20.000</p>
-    <button onclick="order('86 Diamond')">Pesan Sekarang</button>
-</div>
+<section id="home">
+    <div class="card">
+        <h2>Selamat Datang di Firz Store</h2>
+        <p>Tempat top up termurah dan terpercaya! Proses cepat 1–5 menit.</p>
+        <a class="btn" href="https://wa.me/6281615639947">Pesan Sekarang</a>
+    </div>
+</section>
 
-<div class="product">
-    <h3>172 Diamond</h3>
-    <p class="price">Rp 40.000</p>
-    <button onclick="order('172 Diamond')">Pesan Sekarang</button>
-</div>
+<section id="ml">
+    <h2>Diamond Mobile Legends</h2>
+    <div class="card">
+        <p>💎 86 DM — Rp 20.000<br>
+           💎 172 DM — Rp 40.000<br>
+           💎 257 DM — Rp 60.000<br>
+           💎 344 DM — Rp 80.000<br>
+           💎 515 DM — Rp 120.000
+        </p>
+        <a class="btn" href="https://wa.me/6281615639947">Pesan Diamond ML</a>
+    </div>
+</section>
 
-<div class="product">
-    <h3>257 Diamond</h3>
-    <p class="price">Rp 60.000</p>
-    <button onclick="order('257 Diamond')">Pesan Sekarang</button>
-</div>
+<section id="ff">
+    <h2>Diamond Free Fire</h2>
+    <div class="card">
+        <p>💎 50 DM — Rp 8.000<br>
+           💎 140 DM — Rp 20.000<br>
+           💎 355 DM — Rp 50.000<br>
+           💎 720 DM — Rp 95.000
+        </p>
+        <a class="btn" href="https://wa.me/6281615639947">Pesan Diamond FF</a>
+    </div>
+</section>
 
-<script>
-function order(item) {
-    window.location.href =
-        "https://wa.me/6281615639947?text=Halo%20bang,%20saya%20mau%20order%20" 
-        + encodeURIComponent(item);
-}
-</script>
+<section id="pubg">
+    <h2>PUBG UC</h2>
+    <div class="card">
+        <p>UC 60 — Rp 13.000<br>
+           UC 325 — Rp 65.000<br>
+           UC 660 — Rp 120.000
+        </p>
+        <a class="btn" href="https://wa.me/6281615639947">Pesan UC PUBG</a>
+    </div>
+</section>
+
+<section id="lainnya">
+    <h2>Top Up Lainnya</h2>
+    <div class="card">
+        <p>✔ Genshin Impact<br>
+           ✔ Higgs Domino<br>
+           ✔ Valorant<br>
+           ✔ Point Blank<br>
+           ✔ dan lainnya...</p>
+        <a class="btn" href="https://wa.me/6281615639947">Top Up Game Lain</a>
+    </div>
+</section>
+
+<section id="promo">
+    <h2>Promo Hari Ini</h2>
+    <div class="card">
+        <p>🔥 Promo 20.000 dapat 86 DM ML<br>
+           🔥 Cashback 5% semua top up<br>
+           🔥 Khusus member lama diskon besar!</p>
+        <a class="btn" href="https://wa.me/6281615639947">Ambil Promo</a>
+    </div>
+</section>
+
+<section id="testi">
+    <h2>Testimoni Pembeli</h2>
+    <div class="card">
+        <p>• "Cepat banget bang, mantap!"<br>
+           • "Murah dan aman, langganan!"<br>
+           • "Respon cepat, rekomendasi!"</p>
+    </div>
+</section>
+
+<section id="tentang">
+    <h2>Tentang Firz Store</h2>
+    <div class="card">
+        <p>Firz Store adalah penyedia top up game terpercaya sejak 2024.
+        Harga murah, proses cepat, dan layanan ramah.</p>
+    </div>
+</section>
+
+<section id="kontak">
+    <h2>Kontak</h2>
+    <div class="card">
+        <p>Hubungi admin untuk order:</p>
+        <a class="btn" href="https://wa.me/6281615639947">Chat WhatsApp</a>
+    </div>
+</section>
 
 </body>
 </html>

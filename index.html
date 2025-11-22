@@ -3,92 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIRSETOR - Jual Diyamon</title>
-
+    <title>Firz Store - Top Up Diamond ML</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; }
-        header { 
-            background: white; 
-            padding: 30px; 
-            text-align: center; 
-            border-bottom: 1px solid #ddd;
-        }
-        header img {
-            width: 120px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        h1 { margin: 0; font-size: 28px; letter-spacing: 1px; }
-        p.topdesk { margin-top: 5px; color: #555; }
-
-        section { padding: 25px; text-align: center; }
-        .produk {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .card {
-            width: 260px;
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 12px;
-            padding: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 15px;
-            background: #27ae60;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        footer {
-            background: #eee;
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
             text-align: center;
+        }
+        header {
+            background: black;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .product {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .price {
+            font-size: 22px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        button {
+            background: #25d366;
+            color: white;
             padding: 12px;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #555;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1ebe5d;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="logo.png">
- alt="Logo FIRSETOR">
-    <h1>FIRSETOR</h1>
-    <p class="topdesk">Jual Diyamon Harga 20K</p>
-</header>
+<header>Firz Store | Top Up ML Murah</header>
 
-<section>
-    <h2>Produk</h2>
-    <div class="produk">
+<h2>Daftar Harga Diamond</h2>
 
-        <div class="card">
-            <img src="logo.png">
- alt="Diyamon">
-            <h3>Diyamon</h3>
-            <p>Top up cepat, aman, terpercaya.</p>
-            <p><b>Rp 20.000</b></p>
-            <a class="btn" href="https://wa.me/62877654627325">Order via WhatsApp</a>
-        </div>
+<div class="product">
+    <h3>86 Diamond</h3>
+    <p class="price">Rp 20.000</p>
+    <button onclick="order('86 Diamond')">Pesan Sekarang</button>
+</div>
 
-    </div>
-</section>
+<div class="product">
+    <h3>172 Diamond</h3>
+    <p class="price">Rp 40.000</p>
+    <button onclick="order('172 Diamond')">Pesan Sekarang</button>
+</div>
 
-<footer>
-    © 2025 FIRSETOR — Hubungi: 0877-6546-27325
-</footer>
+<div class="product">
+    <h3>257 Diamond</h3>
+    <p class="price">Rp 60.000</p>
+    <button onclick="order('257 Diamond')">Pesan Sekarang</button>
+</div>
+
+<script>
+function order(item) {
+    window.location.href =
+        "https://wa.me/6281615639947?text=Halo%20bang,%20saya%20mau%20order%20" 
+        + encodeURIComponent(item);
+}
+</script>
 
 </body>
 </html>
-
-
